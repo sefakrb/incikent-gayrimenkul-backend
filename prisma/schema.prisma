@@ -7,8 +7,32 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+model Advertisement {
+  id     Int                   @id @default(autoincrement())
+  title  String                @unique
+  price  Int
+  region String
+  meter  Int
+  room   String
+  link   String
+  image  Advertisement_Images?
+}
+
+model Image {
+  id            Int                   @id @unique @default(autoincrement())
+  imageId       String                @unique
+  path          String
+  title         String
+  advertisement Advertisement_Images?
+}
+
+model Advertisement_Images {
+  advertisement   Advertisement @relation(fields: [advertisementId], references: [id], onUpdate: Cascade, onDelete: Cascade)
+  advertisementId Int           @unique
+  image           Image         @relation(fields: [imageId], references: [imageId], onUpdate: Cascade, onDelete: Cascade)
+  imageId         String        @unique
+
+  id Int @unique @default(autoincrement())
+
+  @@id([advertisementId, imageId])
 }
