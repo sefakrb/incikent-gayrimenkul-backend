@@ -8,7 +8,6 @@ export class ImageService {
   constructor(private prisma: PrismaService) { }
 
   async create(image: Express.Multer.File) {
-    console.log(image);
     const getImage = await this.prisma.image.findFirst({
       where: {
         imageId: image.filename
@@ -20,14 +19,14 @@ export class ImageService {
 
     const newImage = await this.prisma.image.create({
       data: {
-        imageId: image.filename.split('.')[0],
+        imageId: image.filename,
         path: image.path,
         title: image.originalname,
       },
     });
     return {
       data: newImage,
-      message: 'Image has been created successfully',
+      message: 'Image has been uploaded successfully',
       status: 201,
     };
   }

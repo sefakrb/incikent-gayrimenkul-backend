@@ -9,13 +9,11 @@ export class AdvertisementController {
 
   @Post()
   create(@Body() createAdvertisementData: CreateAdvertisementDto) {
-    console.log("deneme", createAdvertisementData);
     return this.advertisementService.create(createAdvertisementData);
   }
 
   @Get()
   findAll() {
-    console.log("findAll");
     return this.advertisementService.findAll();
   }
 

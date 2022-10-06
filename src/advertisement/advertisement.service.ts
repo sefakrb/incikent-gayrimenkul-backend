@@ -40,9 +40,25 @@ export class AdvertisementService {
     };
   }
 
-  findAll() {
-    return `This action returns all advertisement`;
-  }
+  async findAll() {
+    const advertisements = await this.prisma.advertisement.findMany()
+    const advertisementsWithUrl =  await Promise.all(advertisements.map(async (advert) => {
+      const imageUrl = await this.prisma.advertisement_Images.findFirst({
+        where: {
+          advertisementId: advert.id
+        },
+        select: {
+          imageId: true
+        }
+      })
+      return {...advert, "imageId": imageUrl.imageId}
+    }))
+    
+    return {
+      data: advertisementsWithUrl,
+      message: 'Advertisements has been gotton successfully',
+      status: 201,
+    };  }
 
   findOne(id: number) {
     return `This action returns a #${id} advertisement`;

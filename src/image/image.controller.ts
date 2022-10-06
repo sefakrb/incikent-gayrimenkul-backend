@@ -33,7 +33,6 @@ export class ImageController {
       ],
     }),
   ) image:  Express.Multer.File) {
-    console.log("geldi");
     return this.imageService.create(image);
   }
 
