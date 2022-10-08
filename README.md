@@ -1,73 +1,104 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# İncikent Gayrimenkul Backend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<!-- PROJECT LOGO -->
+<div name="readme-top"  align="center">
+  <a href="https://github.com/sefakrb/incikent-gayrimenkul-backend">
+    <img src="uploads/incikent-gayrimenkul-logo.png" alt="Logo">
+  </a>
+</div>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<br />
+<br />
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+        <a href="#built-with">Built With</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-## Installation
 
-```bash
-$ npm install
-```
+## About The Project
 
-## Running the app
+  This website is for [İncikent Gayrimenkul](https://incikentgayrimenkul.sahibinden.com/) which is a real estate consultant in Ankara/Turkey
 
-```bash
-# development
-$ npm run start
 
-# watch mode
-$ npm run start:dev
+### Built With
 
-# production mode
-$ npm run start:prod
-```
+* [![Nest][Nest.js]][Nest-url]
+* [![Postgres][Postgres]][Postgres-url]
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# e2e tests
-$ npm run test:e2e
+## Getting Started
 
-# test coverage
-$ npm run test:cov
-```
+### Prerequisites
 
-## Support
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Installation
 
-## Stay in touch
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sefakrb/incikent-gayrimenkul-backend.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Create your own `.env` file as in `.env.example` file
+   ```js
+    DATABASE_URL="postgresql://postgres:PASSWORD@DOMAIN:PORT/DB-NAME"
+    BACKEND_URL="localhost:8080/"
+   ```
+4. Generate Prisma Client
+   ```js
+    npx prisma generate
+   ```
+5. Build Setup 
+   * Run on development mode
+     ```sh
+     npm run start
+     ```
+   
+   * Run on watch mode
+     ```sh
+      npm run start:dev
+     ```
+     
+   * Build for production and launch server
+      ```sh
+        npm run start:prod
+      ```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## Contact
+Sefa Karabaş - sefa799@gmail.com
+Project Link: [https://github.com/sefakrb/incikent-gayrimenkul](https://github.com/sefakrb/incikent-gayrimenkul-frontend)
 
-Nest is [MIT licensed](LICENSE).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Nest.js]: https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white
+[Nest-url]: https://nestjs.com/
+[Postgres]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
+[Postgres-url]: https://www.postgresql.org/
