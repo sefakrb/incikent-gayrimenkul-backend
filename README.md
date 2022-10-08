@@ -39,6 +39,7 @@
 
 * [![Nest][Nest.js]][Nest-url]
 * [![Postgres][Postgres]][Postgres-url]
+* [![Prisma][Prisma]][Prisma-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,3 +103,5 @@ Project Link: [https://github.com/sefakrb/incikent-gayrimenkul](https://github.c
 [Nest-url]: https://nestjs.com/
 [Postgres]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
 [Postgres-url]: https://www.postgresql.org/
+[Prisma]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
+[Prisma-url]: https://www.prisma.io/
