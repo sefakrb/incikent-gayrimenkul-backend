@@ -91,7 +91,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
-Sefa Karabaş - sefa799@gmail.com
+Sefa Karabaş - sefaa.karabas@gmail.com
 Project Link: [https://github.com/sefakrb/incikent-gayrimenkul](https://github.com/sefakrb/incikent-gayrimenkul-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
